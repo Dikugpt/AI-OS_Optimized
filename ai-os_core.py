@@ -189,4 +189,4 @@ def start_background_thread():
 if __name__ == "__main__":
     log_event("AI-OS Final Evolution starting up...", "INFO")
     start_background_thread()
-    app.run(host=HOST, port=PORT)
+    app.run(host="0.0.0.0", port=5000, debug=False, threaded=True)
